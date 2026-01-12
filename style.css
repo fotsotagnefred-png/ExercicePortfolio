@@ -1,0 +1,236 @@
+/* ÉTAPE 1 : IMPORTATION */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
+
+/*  ÉTAPE 2 : BASES ET TYPOS */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff; /* Fond blanc pour la clarté */
+  color: #1d1d1f;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+/*  ÉTAPE 3 : UTILISATION DU JAUNE  */
+header {
+  background-color: rgba(255, 215, 0, 0.1); /* Jaune très léger pour le rappel */
+  backdrop-filter: blur(10px);
+}
+/* RESET ET BASES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #1d1d1f;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVIGATION */
+header {
+    border-bottom: 1px solid #e5e5e7;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 3.6rem;
+    color: #1d1d1f;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.logo h1:hover {
+    color:#FFD700;
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #1d1d1f;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+    /*remplace du bleu par le jaune */
+    transform: scale(5.0);
+}
+
+/* HERO SECTION - AVEC IMAGE IA */
+.hero {
+    /* image darriere plan de mon portfolio */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background-color: #FFD700;
+    /*ma nouvelle couleur jaune */
+    color: white;
+    padding: 14px 32px;
+    border-radius: 980px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #e6c200;
+    /* un jauine un peu plus sombre au survol */
+    transform: scale(2.15);
+}
+
+/* SECTIONS TITRES */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* ABOUT */
+.about { padding: 100px 0; }
+.about-content { display: flex; gap: 60px; align-items: center; }
+.about-image { flex: 1; }
+.about-image img { width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+.about-text { flex: 1; }
+.about-text h4 { font-size: 1.8rem; margin-bottom: 20px; }
+
+/* SKILLS */
+.skills { background-color: #f5f5f7; padding: 100px 0; }
+.skills-grid { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+.skill-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.skill-card:hover { transform: translateY(-10px); }
+.skill-icon { font-size: 3rem; margin-bottom: 20px; }
+
+/* PROJECTS */
+.projects { padding: 100px 0; }
+.projects-grid { display: flex; flex-direction: column; gap: 40px; }
+.project-card {
+    display: flex;
+    background: #f5f5f7;
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+}
+.project-image {
+    width: 40%;
+    height: 250px;
+    background: linear-gradient(135deg, #FFD966);
+    /*couleur section projet jaune pastel */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+body {
+background: linear-gradient(135deg,#F4d35E);
+/*visuel des projet personnaliser*/
+}
+.project-content { flex: 1; }
+
+/* FORMULAIRE DE CONTACT */
+.contact { padding: 100px 0; background-color: #f5f5f7; }
+.contact-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+.form-group input, .form-group textarea {
+    padding: 15px;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+}
+
+.submit-button {
+    background: #1d1d1f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.project-link {
+    display: inline-block;    /* INDISPENSABLE : permet au texte de s'agrandir */
+    color:#FFD700;           /* couleur jaune ajouter */
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Rend l'animation fluide */
+}
+.project-link:hover {
+    transform: scale(1.7);    /* Le lien grossit de 20% */
+}
+/* FOOTER */
+footer { padding: 60px 0; border-top: 1px solid #e5e5e7; text-align: center; }
+.footer-content { display: flex; justify-content: space-around; margin-bottom: 30px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-content, .project-card { flex-direction: column; }
+    .project-image { width: 100%; }
+    .hero h2 { font-size: 2.2rem; }
+    .nav-links { display: none; } /* On cache le menu sur mobile pour simplifier */
+}
