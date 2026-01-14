@@ -150,10 +150,10 @@ nav {
 .about-text h4 { font-size: 1.8rem; margin-bottom: 20px; }
 
 /* SKILLS */
-.skills { background-color: #f5f5f7; padding: 100px 0; }
+.skills { background-color: #f2d06b; padding: 100px 0; }
 .skills-grid { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
 .skill-card {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 40px;
     border-radius: 20px;
     flex: 1;
