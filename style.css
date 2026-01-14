@@ -37,7 +37,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #FFD700;
 }
 
 /* NAVIGATION */
@@ -87,7 +86,7 @@ nav {
 .nav-links a:hover {
     color: #FFD700;
     /*remplace du bleu par le jaune */
-    transform: scale(5.0);
+    transform: scale(2.0);
 }
 
 /* HERO SECTION - AVEC IMAGE IA */
